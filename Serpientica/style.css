@@ -1,0 +1,22 @@
+/* Main Section */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* Canvas Section */
+canvas {
+    border: 1px solid #000000;
+    /* width: 500px;
+    height: 500px; */
+}
+
+/* Footer Section */
+footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-align: center;
+	padding: 1em;
+	color: #000;
+}

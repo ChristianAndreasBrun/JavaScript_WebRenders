@@ -1,0 +1,78 @@
+/* Main Section */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+main {
+    width: 500px;
+    background: #2f4058;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+}
+
+/* Buttons Section */
+button {
+    border: none;
+    padding: 1em 1.3em;
+    border-radius: 1em;
+    width: 200px;
+    height: 150px;
+    font-size: 1.2em;
+    margin: 0.5em;
+    box-shadow: 5px 5px 4px #17202e;
+}
+
+button:hover {
+    box-shadow: 5px 5px 4px #55749c;
+}
+
+/* Entry button style */
+.btn_entry {
+    background: #4fff98;
+}
+
+.btn_entry:active {
+    box-shadow: 5px 5px 2px #2a7a4b;
+    background: #40c577;
+}
+
+/* Exit button style */
+.btn_exit {
+    background: #e96666;
+}
+
+.btn_exit:active {
+    box-shadow: 5px 5px 2px #812e2e;
+    background: #ad4b4b;
+}
+
+/* Reset button style */
+.btn_reset {
+    background: #4fcdff;
+}
+
+.btn_reset:active {
+    box-shadow: 5px 5px 2px #2c6d86;
+    background: #3994b8;
+}
+
+/*Esta secion es el pie de pagina, se controla la posicion de texto y colores*/
+footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-align: center;
+	padding: 1em;
+	color: ghostwhite;
+}
