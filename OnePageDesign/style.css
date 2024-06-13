@@ -1,0 +1,151 @@
+/*Importacion de fuente de la pagina Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+/*En esta seccion se contola los parrametros de */
+* {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+}
+
+/*Filtro de contraste para las imagenes*/
+img {
+	filter:  contrast(1.2);
+}
+
+
+/*Seccion de clases en donde se agregan las imagenes correspondiente, tambien se agrega effectos de texto por cada apartado, modificando los colores para seguir la tematica en este caso, de cada juego*/
+.cyberpunk {
+	background-image: url(img/CyberPunk2077.png);
+/*Espaciado de letras*/
+	letter-spacing:0.1em;
+/*Damos el efecto al texto usando las herramientas ccs de webkit */
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: #F8F134;
+/*Usamos las sombras para dar el efecto de 3 textos de diferentes colores*/
+  	text-shadow: 4px 4px black, 6px 6px #3DE6F5;
+}
+
+.witcher3 {
+	background-image: url(img/TheWitcher.jpg);
+/*Espaciado de letras*/
+	letter-spacing:0.1em;
+/*Damos el efecto al texto usando las herramientas ccs de webkit */
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: #EA1717;
+/*Usamos las sombras para dar el efecto de 3 textos de diferentes colores*/
+  	text-shadow: 4px 4px lightgrey, 6px 6px #8A8A8A;
+}
+
+.godofwar {
+	background-image: url(img/GodOfWar.jpg);
+/*Espaciado de letras*/
+	letter-spacing:0.1em;
+/*Damos el efecto al texto usando las herramientas ccs de webkit */
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: lightgray;
+/*Usamos las sombras para dar el efecto de 3 textos de diferentes colores*/
+  	text-shadow: 4px 4px red, 6px 6px black;
+}
+
+.reddead2 {
+	background-image: url(img/RedDead2.png);
+/*Espaciado de letras*/
+	letter-spacing:0.1em;
+/*Damos el efecto al texto usando las herramientas ccs de webkit */
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: red;
+/*Usamos las sombras para dar el efecto de 3 textos de diferentes colores*/
+  	text-shadow: 4px 4px white, 6px 6px black;
+}
+
+.apex {
+	background-image: url(img/ApexLegends.jpg);
+/*Espaciado de letras*/
+	letter-spacing:0.1em;
+/*Damos el efecto al texto usando las herramientas ccs de webkit */
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: darkgray;
+/*Usamos las sombras para dar el efecto de 3 textos de diferentes colores*/
+  	text-shadow: 4px 4px white, 6px 6px red;
+}
+
+.spiderman {
+	background-image: url(img/MarvelSpiderMan.jpg);
+/*Espaciado de letras*/
+	letter-spacing:0.1em;
+/*Damos el efecto al texto usando las herramientas ccs de webkit */
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: ghostwhite;
+/*Usamos las sombras para dar el efecto de 3 textos de diferentes colores*/
+  	text-shadow: 4px 4px red, 6px 6px white;
+}
+
+.warframe {
+	background-image: url(img/Warframe.jpg);
+/*Espaciado de letras*/
+	letter-spacing:0.1em;
+/*Damos el efecto al texto usando las herramientas ccs de webkit */
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: #6DACF2;
+/*Usamos las sombras para dar el efecto de 3 textos de diferentes colores*/
+  	text-shadow: 4px 4px black, 6px 6px white;
+}
+
+
+/*En esta seccion usamos la clase general "games", para encuadrar las imagenes y hacer el efecto OnePage*/
+.games {
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+/*Especificamos la transformacion de texto para el "h2" que esta dentro de la clase "games"*/
+.games h2 {
+	padding-left: 2em;
+	font-weight: 400;
+	font-size: 5em;
+}
+
+
+/*En esta seccion esta la configuracoin de la barra de navegacion, como la transparencia, el tamaño y la colocacion de los elementos*/
+nav  {
+	height: 15vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/*Da formato color, y quitamos la decoracion del texto*/
+nav .item a {
+	text-decoration: none;
+	font-size: 1.3em;
+	color: ghostwhite;
+	text-shadow: 2px 2px 5px black;
+}
+
+/*El texto se transforma al colocar el puntero encima del texto de la barra de navegacion*/
+nav .item a:hover {
+	color: #E04CFF;
+  	text-shadow: 2px 2px black, 5px 5px 12px ghostwhite;
+}
+
+/*Esta secion es el pie de pagina, se controla la posicion de texto y colores*/
+footer p {
+	text-align: center;
+	padding: 1em;
+	color: ghostwhite;
+	background-color: #1D1D1D;
+}
